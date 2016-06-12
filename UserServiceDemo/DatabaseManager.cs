@@ -179,7 +179,7 @@ namespace UserServiceDemo
                 tempUser.email = (string)reader["USER_EMAIL"];
                 tempUser.password = (string)reader["USER_PASSWORD"];
                 tempUser.GUID = (Guid)reader["USER_GUID"];
-                tempUser.LastLogin = (string)reader["USER_LAST_LOGIN"];
+                tempUser.LastLogin = (DateTime)reader["USER_LAST_LOGIN"];
 
                 //add user buffer to user list
                 userList.Add(tempUser);
