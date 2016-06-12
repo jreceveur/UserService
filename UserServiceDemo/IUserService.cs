@@ -39,5 +39,7 @@ namespace UserServiceDemo
         public string password { get; set; }
         [DataMember]
         public Guid GUID { get; set; }
+        [DataMember]
+        public string LastLogin { get; set; }
     }
 }
