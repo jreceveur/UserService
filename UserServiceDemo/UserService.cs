@@ -11,6 +11,8 @@ namespace UserServiceDemo
     
     public class UserService : IUserService
     {
+        //TODO: return boolean for calls that do not return results to describe if action was successful or not
+        //TODO: Notify the user of successful operations by passing the boolean values back, or returning result set
         
         [WebInvoke(Method = "GET",
                     RequestFormat = WebMessageFormat.Json,

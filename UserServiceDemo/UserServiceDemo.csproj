@@ -59,6 +59,15 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL_Scripts\db_create.sql" />
+    <Content Include="SQL_Scripts\table_create.sql" />
+    <Content Include="SQL_Scripts\uspDeleteUser_create.sql" />
+    <Content Include="SQL_Scripts\uspInsertNewUser_create.sql" />
+    <Content Include="SQL_Scripts\uspListUser_create.sql" />
+    <Content Include="SQL_Scripts\uspUpdateLoginDate_create.sql" />
+    <Content Include="SQL_Scripts\uspUpdateUser_create.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
