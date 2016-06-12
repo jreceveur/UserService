@@ -40,6 +40,6 @@ namespace UserServiceDemo
         [DataMember]
         public Guid GUID { get; set; }
         [DataMember]
-        public DateTime LastLogin { get; set; }
+        public string LastLogin { get; set; }
     }
 }
