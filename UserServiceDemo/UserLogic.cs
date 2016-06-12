@@ -25,7 +25,7 @@ namespace UserServiceDemo
             if (userInfo.FirstOrDefault().password == Security.hash(oldpassword + userInfo.FirstOrDefault().GUID.ToString()))
             {
                 //hash new password
-                string newPassword = Security.hash(password + userInfo.FirstOrDefault().ToString());
+                string newPassword = Security.hash(password + userInfo.FirstOrDefault().GUID.ToString());
 
                 //update account
                 db.UpdateUser(fname, lname, email, newPassword, oldemail);
